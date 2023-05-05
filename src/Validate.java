@@ -16,18 +16,8 @@ public class Validate {
                     output = String.valueOf(validateInteger("Enter integer: ", "Must be integer and bigger than 1 ! Input again !.", 1));
                     break;
                 case 2:
-                    int min = 0;
-                    int max = 0;
-                    while (true) {
-                        min = validateInteger("Enter min: ", "Must be integer and bigger than 1 ! Input again !.", 1);
-                        max = validateInteger("Enter max: ", "Must be integer and bigger than 1 ! Input again !.", 1);
-                        if (max > min) {
-                            output = String.valueOf(validateOption("Enter Option: ", min, max));
-                            break;
-                        } else {
-                            System.out.println("Max must be bigger than min !. Input again !");
-                        }
-                    }
+                    output = String.valueOf(callValidateOption());
+                    break;
                 case 3:
                     output = String.valueOf(validateNonNumber("Enter string without number: ", "Must be string without number ! Input again !."));
                     break;
@@ -56,6 +46,22 @@ public class Validate {
             if (confirmString.equals("n") || confirmString.equals("N")) {
                 System.out.println("Bye !");
                 return;
+            }
+        }
+    }
+
+    public static int callValidateOption() {
+        int output = 0;
+        int min = 0;
+        int max = 0;
+        while (true) {
+            min = validateInteger("Enter min: ", "Must be integer and bigger than 1 ! Input again !.", 1);
+            max = validateInteger("Enter max: ", "Must be integer and bigger than 1 ! Input again !.", 1);
+            if (max > min) {
+                output = validateOption("Enter Option: ", min, max);
+                return output;
+            } else {
+                System.out.println("Max must be bigger than min !. Input again !");
             }
         }
     }

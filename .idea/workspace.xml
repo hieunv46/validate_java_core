@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf59f924-7ebf-4499-aa7f-20fec57e03c9" name="Changes" comment="" />
+    <list default="true" id="bf59f924-7ebf-4499-aa7f-20fec57e03c9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ValidateJavaCore.iml" beforeDir="false" afterPath="$PROJECT_DIR$/validate_jc.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Validate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Validate.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,7 +43,20 @@
   <component name="RunManager">
     <configuration name="Validate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Validate" />
-      <module name="ValidateJavaCore" />
+      <module name="validate_jc" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="validate_jc" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="validate_jc" />
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -59,7 +76,8 @@
       <option name="presentableId" value="Default" />
       <updated>1683188089579</updated>
       <workItem from="1683188090889" duration="4126000" />
-      <workItem from="1683224810766" duration="3565000" />
+      <workItem from="1683224810766" duration="4162000" />
+      <workItem from="1683249164349" duration="2279000" />
     </task>
     <servers />
   </component>
